@@ -222,7 +222,7 @@ p {
   right: var(--spacing-xl);
   padding: var(--spacing-md);
   border-radius: var(--border-radius);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links a {
@@ -459,6 +459,252 @@ p {
 .card-cost {
   font-weight: 600;
   color: var(--color-secondary);
+}
+
+
+/* ====================================
+   ITINERARY PAGES
+   ==================================== */
+
+.itinerary-hero {
+  margin-top: 80px;
+  position: relative;
+}
+
+.itinerary-hero-image {
+  height: 50vh;
+  min-height: 400px;
+}
+
+.itinerary-hero-image .image-placeholder {
+  height: 100%;
+  border-radius: 0;
+}
+
+.itinerary-hero-content {
+  background: linear-gradient(to top, rgba(250, 248, 245, 1) 0%, rgba(250, 248, 245, 0.95) 50%, transparent 100%);
+  padding: var(--spacing-xl) var(--spacing-md);
+  margin-top: -120px;
+  position: relative;
+  z-index: 10;
+}
+
+.breadcrumb {
+  font-size: 0.85rem;
+  color: var(--color-gray-500);
+  margin-bottom: var(--spacing-sm);
+}
+
+.breadcrumb a {
+  color: var(--color-gray-500);
+}
+
+.breadcrumb a:hover {
+  color: var(--color-secondary);
+}
+
+.itinerary-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: var(--spacing-sm);
+}
+
+.itinerary-subtitle {
+  font-size: 1.2rem;
+  color: var(--color-gray-600);
+  margin-bottom: var(--spacing-lg);
+}
+
+.itinerary-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+  padding-top: var(--spacing-md);
+}
+
+.meta-item {
+  font-size: 0.95rem;
+  color: var(--color-gray-600);
+}
+
+.meta-item strong {
+  color: var(--color-primary);
+}
+
+/* ====================================
+   ITINERARY OVERVIEW
+   ==================================== */
+
+.itinerary-overview {
+  padding: var(--spacing-xl) var(--spacing-md);
+  background-color: var(--color-white);
+}
+
+.overview-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.overview-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-gray-600);
+}
+
+/* ====================================
+   DAILY ITINERARY
+   ==================================== */
+
+.daily-itinerary {
+  padding: var(--spacing-2xl) var(--spacing-md);
+}
+
+.day-card {
+  background-color: var(--color-white);
+  border-radius: 8px;
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.day-header {
+  margin-bottom: var(--spacing-md);
+}
+
+.day-number {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--color-secondary) 0%, #3d7760 100%);
+  color: var(--color-white);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.day-title {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+}
+
+.day-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--spacing-lg);
+}
+
+.day-image .image-placeholder {
+  height: 300px;
+  border-radius: 8px;
+}
+
+.day-description h4 {
+  color: var(--color-primary);
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.1rem;
+}
+
+.day-description ul {
+  list-style: disc;
+  padding-left: var(--spacing-md);
+}
+
+.day-description li {
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-gray-600);
+  line-height: 1.7;
+}
+
+.day-description p {
+  color: var(--color-gray-600);
+  line-height: 1.7;
+}
+
+/* ====================================
+   COST BREAKDOWN
+   ==================================== */
+
+.cost-breakdown {
+  padding: var(--spacing-xl) var(--spacing-md);
+  background-color: var(--color-cream);
+}
+
+.cost-table {
+  max-width: 700px;
+  margin: 0 auto var(--spacing-md);
+  background-color: var(--color-white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cost-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.cost-row:last-child {
+  border-bottom: none;
+}
+
+.cost-row.cost-total {
+  background-color: var(--color-gray-100);
+  font-size: 1.1rem;
+}
+
+.cost-label {
+  color: var(--color-gray-600);
+}
+
+.cost-value {
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.cost-note {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-gray-500);
+  font-style: italic;
+}
+
+/* ====================================
+   PRACTICAL TIPS
+   ==================================== */
+
+.practical-tips {
+  padding: var(--spacing-xl) var(--spacing-md);
+  background-color: var(--color-white);
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.tip-card {
+  padding: var(--spacing-md);
+  background-color: var(--color-cream);
+  border-radius: 8px;
+  border-left: 4px solid var(--color-secondary);
+}
+
+.tip-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-primary);
+}
+
+.tip-card p {
+  font-size: 0.95rem;
+  color: var(--color-gray-600);
+  line-height: 1.7;
+  margin: 0;
 }
 
 
