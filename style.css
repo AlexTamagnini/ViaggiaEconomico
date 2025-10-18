@@ -402,16 +402,46 @@ p {
   overflow: hidden;
 }
 
-.image-placeholder {
-  background: linear-gradient(135deg, #d4d4d4 0%, #e5e5e5 100%);
+.image-destination {
+  width: 100%;
   height: 280px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: var(--color-gray-500);
-  font-size: 0.85rem;
-  text-align: center;
-  padding: var(--spacing-sm);
+  overflow: hidden;
+}
+
+.image-destination img {
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.image-destination-home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-destination-home img {
+  width: 100%;
+}
+
+.image-destination-day {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image-destination-day img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .card-badge {
@@ -476,14 +506,9 @@ p {
   min-height: 400px;
 }
 
-.itinerary-hero-image .image-placeholder {
-  height: 100%;
-  border-radius: 0;
-}
-
 .itinerary-hero-content {
+  background: linear-gradient(to bottom left, var(--color-gray-100), var(--color-gray-200));
   padding: var(--spacing-xl) var(--spacing-md);
-  margin-top: -120px; /* TODO */
   position: relative;
   z-index: 10;
 }
@@ -591,11 +616,6 @@ p {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: var(--spacing-lg);
-}
-
-.day-image .image-placeholder {
-  height: 300px;
-  border-radius: 8px;
 }
 
 .day-description h4 {
@@ -781,11 +801,6 @@ p {
 @media (max-width: 480px) {
   :root {
     font-size: 14px;
-  }
-
-  .hero-image,
-  .day-image .image-placeholder {
-    height: 250px;
   }
 
   .itinerary-hero-image {
