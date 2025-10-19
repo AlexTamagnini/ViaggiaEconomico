@@ -345,9 +345,9 @@ p {
 .destinations-section,
 .about-section,
 .newsletter-section {
-  background: linear-gradient(135deg, var(--color-gray-100) 0%, var(--color-gray-200) 100%);
+  background: var(--color-gray-100);
   padding: var(--spacing-2xl) var(--spacing-md);
-  padding-bottom: 500px;
+  padding-bottom: 150px;
 }
 
 .section-header {
@@ -896,33 +896,90 @@ p {
 
 /* Cookie Table */
 .cookie-table {
-    overflow-x: auto;
-    margin: var(--spacing-md) 0;
+  overflow-x: auto;
+  margin: var(--spacing-md) 0;
 }
 
 .cookie-table table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: var(--color-white);
-    border-radius: 8px;
-    overflow: hidden;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-white);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .cookie-table th,
 .cookie-table td {
-    padding: var(--spacing-xs);
-    text-align: left;
-    border-bottom: 1px solid var(--color-gray-200);
+  padding: var(--spacing-xs);
+  text-align: left;
+  border-bottom: 1px solid var(--color-gray-200);
 }
 
 .cookie-table th {
-    background-color: var(--color-gray-100);
-    font-weight: 600;
-    color: var(--color-primary);
-    font-size: 0.9rem;
+  background-color: var(--color-gray-100);
+  font-weight: 600;
+  color: var(--color-primary);
+  font-size: 0.9rem;
 }
 
 .cookie-table td {
-    color: var(--color-gray-600);
-    font-size: 0.9rem;
+  color: var(--color-gray-600);
+  font-size: 0.9rem;
+}
+
+/* ====================================
+   FOOTER
+   ==================================== */
+
+.footer {
+  background-color: var(--color-gray-200);
+  color: var(--color-white);
+  padding: var(--spacing-xl) var(--spacing-md) var(--spacing-md);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-gray-700);
+}
+
+.footer-heading {
+  font-size: 1rem;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+  color: var(--color-gray-700);
+}
+
+.footer-links li {
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-gray-700);
+}
+
+.footer-links a {
+  color: var(--color-gray-700);
+  font-size: 0.9rem;
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: var(--color-gray-800);
+}
+
+.footer-col p {
+  color: var(--color-gray-700);
+}
+
+.footer-bottom {
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-gray-700);
+  text-align: center;
+  color: var(--color-gray-700);
+  font-size: 0.85rem;
 }
