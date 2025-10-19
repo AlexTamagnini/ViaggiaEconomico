@@ -893,3 +893,36 @@ p {
 .legal-section a:hover {
   color: var(--color-accent);
 }
+
+/* Cookie Table */
+.cookie-table {
+    overflow-x: auto;
+    margin: var(--spacing-md) 0;
+}
+
+.cookie-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.cookie-table th,
+.cookie-table td {
+    padding: var(--spacing-xs);
+    text-align: left;
+    border-bottom: 1px solid var(--color-gray-200);
+}
+
+.cookie-table th {
+    background-color: var(--color-gray-100);
+    font-weight: 600;
+    color: var(--color-primary);
+    font-size: 0.9rem;
+}
+
+.cookie-table td {
+    color: var(--color-gray-600);
+    font-size: 0.9rem;
+}
