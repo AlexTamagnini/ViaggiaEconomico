@@ -75,3 +75,9 @@ window.addEventListener('scroll', () => {
 
   lastScroll = currentScroll;
 });
+
+// Removed index.html 
+if (location.pathname.endsWith('index.html')) {
+  const newURL = location.origin + location.pathname.replace(/index\.html$/, '');
+  location.replace(newURL);
+}
