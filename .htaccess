@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Tutte le richieste a http://www.viaggiaeconomico.com → https://viaggiaeconomico.com
+RewriteCond %{HTTP_HOST} ^www\.viaggiaeconomico\.com$ [NC,OR]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://viaggiaeconomico.com/$1 [L,R=301]
+
+# Reindirizza index.html e index.htm alla root
+Redirect 301 /index.html https://viaggiaeconomico.com/
+Redirect 301 /index.htm  https://viaggiaeconomico.com/
