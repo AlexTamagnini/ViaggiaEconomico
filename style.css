@@ -294,6 +294,13 @@ p {
   background: linear-gradient(135deg, var(--color-gray-100) 0%, var(--color-gray-200) 100%);
 }
 
+.hero-404 {
+  margin-top: 80px;
+  align-items: center;
+  padding: 8rem;
+  background: linear-gradient(135deg, var(--color-gray-100) 0%, var(--color-gray-200) 100%);
+}
+
 .hero-content {
   max-width: 600px;
 }
@@ -744,6 +751,10 @@ p {
   .hero {
     grid-template-columns: 1fr;
     padding: var(--spacing-xl) var(--spacing-md);
+  }
+
+  .hero-404 {
+    padding: 2rem;
   }
 
   .hero-image {
