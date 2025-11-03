@@ -4,14 +4,37 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ViaggiaEconomico</title>
+        <title>ViaggiaEconomico: viaggi economici, itinerari e consigli low cost</title>
         <link rel="canonical" href="https://viaggiaeconomico.com/">
         <link rel="icon" href="img/favicon.png" type="image/png">
         <meta name="description"
-            content="ViaggiaEconomico: scopri itinerari, consigli e trucchi per viaggiare spendendo poco. Il tuo blog per esperienze di viaggio autentiche ed economiche.">
+            content="Scopri itinerari e consigli per viaggi economici e autentici in tutto il mondo. ViaggiaEconomico è il blog per chi vuole viaggiare spendendo poco">
         <meta name="keywords"
             content="viaggi economici, itinerari, consigli viaggio, risparmiare viaggi, blog di viaggio, travel, esperienze di viaggio">
         <link rel="stylesheet" href="style.css">
+
+        <meta property="og:title" content="ViaggiaEconomico: viaggi economici, itinerari e consigli low cost">
+        <meta property="og:description" content="Scopri itinerari e consigli per viaggi economici e autentici in tutto il mondo. ViaggiaEconomico è il blog per chi vuole viaggiare spendendo poco.">
+        <meta property="og:url" content="https://viaggiaeconomico.com/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://viaggiaeconomico.com/img/hero.jpg">
+        <meta property="og:site_name" content="ViaggiaEconomico">
+        <meta property="og:locale" content="it_IT">
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "ViaggiaEconomico",
+                "url": "https://viaggiaeconomico.com/",
+                "description": "Blog di viaggi economici con itinerari e consigli per viaggiare spendendo poco e vivere esperienze autentiche.",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://viaggiaeconomico.com/?q={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                }
+            }
+        </script>
 
         <!-- Adsense -->
         <script async
@@ -23,9 +46,9 @@
         <!-- Header -->
         <header class="header">
             <nav class="nav-container">
-                <a href="/" class="logo">ViaggiaEconomico</a>
+                <a href="/" class="logo" title="Torna alla homepage ViaggiaEconomico">ViaggiaEconomico</a>
                 <ul class="nav-links">
-                    <li><a href="#destinazioni">Destinazioni</a></li>
+                    <li><a href="#destinazioni" title="Scopri le destinazioni economiche">Destinazioni</a></li>
                 </ul>
                 <button class="mobile-menu-toggle" aria-label="Menu">
                     <span></span>
@@ -40,13 +63,13 @@
             <!-- Hero Section -->
             <section class="hero">
                 <div class="hero-content">
-                    <h1 class="hero-title">Viaggi Economici in Tutto il Mondo</h1>
+                    <h1 class="hero-title">ViaggiaEconomico: viaggi economici in Tutto il Mondo</h1>
                     <h2 class="hero-subtitle">Itinerari, Destinazioni e Consigli Pratici</h2>
                     <p class="hero-description">
                         Trova itinerari dettagliati, guide giorno per giorno e consigli pratici per risparmiare
                         su trasporti, alloggi e attività in tutto il mondo.
                     </p>
-                    <a href="#destinazioni" class="btn-cta">Scopri gli Itinerari</a>
+                    <a href="#destinazioni" class="btn-cta" title="Scopri le destinazioni economiche">Scopri gli Itinerari</a>
                 </div>
                 <div class="hero-image">
                     <img src="img/hero.jpg" alt="Paesaggio da aereo" fetchpriority="high">
@@ -66,7 +89,7 @@
 
                         <!-- Bulgaria -->
                         <article class="destination-card">
-                            <a href="destinations/Bulgaria.html" class="card-link">
+                            <a href="destinations/Bulgaria.html" class="card-link" title="Itinerario di viaggio in Bulgaria">
                                 <div class="card-image">
                                     <div class="image-destination">
                                         <img src="img/bulgaria.jpg" loading="lazy" alt="Immagine Bulgaria">
@@ -88,7 +111,7 @@
 
                         <!-- Slovacchia -->
                         <article class="destination-card">
-                            <a href="destinations/Slovacchia.html" class="card-link">
+                            <a href="destinations/Slovacchia.html" class="card-link" title="Itinerario di viaggio in Slovacchia">
                                 <div class="card-image">
                                     <div class="image-destination">
                                         <img src="img/slovacchia.jpg" loading="lazy" alt="Immagine Slovacchia">
@@ -112,7 +135,7 @@
 
                         <!-- Romania -->
                         <article class="destination-card">
-                            <a href="destinations/Romania.html" class="card-link">
+                            <a href="destinations/Romania.html" class="card-link" title="Itinerario di viaggio in Romania">
                                 <div class="card-image">
                                     <div class="image-destination">
                                         <img src="img/romania.jpg" loading="lazy" alt="Immagine Romania">
@@ -134,7 +157,7 @@
 
                         <!-- Repubblica Ceca -->
                         <article class="destination-card">
-                            <a href="destinations/Repubblica-Ceca.html" class="card-link">
+                            <a href="destinations/Repubblica-Ceca.html" class="card-link" title="Itinerario di viaggio in Repubblica-Ceca">
                                 <div class="card-image">
                                     <div class="image-destination">
                                         <img src="img/repubblica-ceca.jpg" loading="lazy" alt="Immagine Repubblica-Ceca">
@@ -156,7 +179,7 @@
 
                         <!-- Polonia -->
                         <article class="destination-card">
-                            <a href="destinations/Polonia.html" class="card-link">
+                            <a href="destinations/Polonia.html" class="card-link" title="Itinerario di viaggio in Polonia">
                                 <div class="card-image">
                                     <div class="image-destination">
                                         <img src="img/polonia.jpg" loading="lazy" alt="Immagine Polonia">
@@ -178,7 +201,7 @@
 
                         <!-- Austria -->
                         <article class="destination-card">
-                            <a href="destinations/Austria.html" class="card-link">
+                            <a href="destinations/Austria.html" class="card-link" title="Itinerario di viaggio in Austria">
                                 <div class="card-image">
                                     <div class="image-destination">
                                         <img src="img/austria.jpg" loading="lazy" alt="Immagine Austria">
@@ -216,16 +239,16 @@
                     <div class="footer-col">
                         <h4 class="footer-heading">Link Utili</h4>
                         <ul class="footer-links">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/#destinazioni">Destinazioni</a></li>
-                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                            <li><a href="/" title="Torna alla homepage ViaggiaEconomico">Home</a></li>
+                            <li><a href="/#destinazioni" title="Scopri le destinazioni economiche">Destinazioni</a></li>
+                            <li><a href="privacy-policy.html" title="Leggi la Privacy Policy">Privacy Policy</a></li>
+                            <li><a href="cookie-policy.html" title="Leggi la Cookie Policy">Cookie Policy</a></li>
                         </ul>
                     </div>
 
                     <div class="footer-col">
                         <h4 class="footer-heading">Contatti</h4>
-                        <p><a href="mailto:info.viaggiaeconomico@gmail.com">info.viaggiaeconomico@gmail.com</a></p>
+                        <p><a href="mailto:info.viaggiaeconomico@gmail.com" title="Contatta ViaggiaEconomico">info.viaggiaeconomico@gmail.com</a></p>
 
                     </div>
                 </div>
