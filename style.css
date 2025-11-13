@@ -354,7 +354,6 @@ p {
 .newsletter-section {
   background: var(--color-gray-100);
   padding: var(--spacing-2xl) var(--spacing-md);
-  padding-bottom: 150px;
 }
 
 .section-header {
@@ -993,4 +992,19 @@ p {
   text-align: center;
   color: var(--color-gray-700);
   font-size: 0.85rem;
+}
+
+/* ====================================
+   ADS
+   ==================================== */
+
+.ads-section-o {
+  background: var(--color-gray-100);
+  padding: var(--spacing-2xl) var(--spacing-md);
+}
+
+.ads-container-o {
+  max-width: var(--container-width);
+  padding: 0 var(--spacing-md);
+  margin: 0 auto;
 }
