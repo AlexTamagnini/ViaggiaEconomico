@@ -5,12 +5,12 @@
   <url><loc>https://viaggiaeconomico.com/</loc><priority>1.0</priority></url>
 
   <!-- Destinazioni -->
-  <url><loc>https://viaggiaeconomico.com/destinations/Bulgaria.html</loc><priority>0.7</priority></url>
-  <url><loc>https://viaggiaeconomico.com/destinations/Slovacchia.html</loc><priority>0.7</priority></url>
-  <url><loc>https://viaggiaeconomico.com/destinations/Romania.html</loc><priority>0.7</priority></url>
-  <url><loc>https://viaggiaeconomico.com/destinations/Repubblica-Ceca.html</loc><priority>0.7</priority></url>
-  <url><loc>https://viaggiaeconomico.com/destinations/Polonia.html</loc><priority>0.7</priority></url>
-  <url><loc>https://viaggiaeconomico.com/destinations/Austria.html</loc><priority>0.7</priority></url>
-  <url><loc>https://viaggiaeconomico.com/destinations/Cipro.html</loc><priority>0.7</priority></url>
+  <url><loc>https://viaggiaeconomico.com/destinations/itinerario-bulgaria.html</loc><priority>0.7</priority></url>
+  <url><loc>https://viaggiaeconomico.com/destinations/itinerario-slovacchia.html</loc><priority>0.7</priority></url>
+  <url><loc>https://viaggiaeconomico.com/destinations/itinerario-romania.html</loc><priority>0.7</priority></url>
+  <url><loc>https://viaggiaeconomico.com/destinations/itinerario-repubblica-ceca.html</loc><priority>0.7</priority></url>
+  <url><loc>https://viaggiaeconomico.com/destinations/itinerario-polonia.html</loc><priority>0.7</priority></url>
+  <url><loc>https://viaggiaeconomico.com/destinations/itinerario-austria.html</loc><priority>0.7</priority></url>
+  <url><loc>https://viaggiaeconomico.com/destinations/itinerario-cipro.html</loc><priority>0.7</priority></url>
 
 </urlset>
