@@ -696,7 +696,7 @@ p {
 
 .cost-value {
   font-weight: 600;
-  color: var(--color-secondary);
+  color: var(--color-accent);
 }
 
 .cost-note {
