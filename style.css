@@ -1008,3 +1008,13 @@ p {
   padding: 0 var(--spacing-md);
   margin: 0 auto;
 }
+
+
+/* ====================================
+   Card Dispari
+   ==================================== */
+@media (min-width: 769px) {
+  .destinations-grid .destination-card:last-child {
+    grid-column: 2;
+  }
+}
