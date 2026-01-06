@@ -1011,10 +1011,12 @@ p {
 
 
 /* ====================================
-   Card Dispari
+   Card singola (Dispari)
    ==================================== */
+/*
 @media (min-width: 769px) {
   .destinations-grid .destination-card:last-child {
     grid-column: 2;
   }
 }
+*/
