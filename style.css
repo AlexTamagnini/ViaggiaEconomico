@@ -358,7 +358,7 @@ p {
 
 .section-header {
   text-align: center;
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
 }
 
 .section-subtitle {
@@ -376,6 +376,14 @@ p {
   color: var(--color-primary);
 }
 
+#noResults {
+  display: none;
+  text-align: center;
+  grid-column: 1 / -1;
+  padding: 2rem;
+  color: #555;
+  font-size: 1.2rem;
+}
 
 /* ====================================
    DESTINATION CARDS
@@ -506,6 +514,85 @@ p {
 .card-cost {
   font-weight: 600;
   color: var(--color-secondary);
+}
+
+
+/* ====================================
+   FILTRI DESTINAZIONI
+   ==================================== */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  justify-content: center;
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-md);
+  background-color: var(--color-white);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.filters.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+  min-width: 180px;
+}
+
+.filter-item label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+}
+
+.filter-item input[type="text"],
+.filter-item select {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--color-gray-300);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.filter-item input[type="text"]:focus,
+.filter-item select:focus {
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 6px 3px rgba(47, 111, 185, 0.25);
+  outline: none;
+}
+
+input[type="range"] {
+  cursor: pointer;
+  accent-color: var(--color-secondary);
+}
+
+.filter-item input[type="text"],
+.filter-item select,
+input[type="range"] {
+  height: 36px; 
+}
+
+#priceValue {
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin-left: 0.2rem;
+}
+
+@media (max-width: 790px) {
+  .filters {
+    flex-direction: column;
+    padding: var(--spacing-md);
+  }
 }
 
 
