@@ -7,10 +7,9 @@
         <title>ViaggiaEconomico: viaggi economici, itinerari e consigli low cost</title>
         <link rel="canonical" href="https://viaggiaeconomico.com/">
         <link rel="icon" href="img/favicon.png" type="image/png">
-        <meta name="description"
-            content="Scopri itinerari e consigli per viaggi economici e autentici in tutto il mondo. ViaggiaEconomico è il blog per chi vuole viaggiare spendendo poco">
-        <meta name="keywords"
-            content="viaggi economici, itinerari, consigli viaggio, risparmiare viaggi, blog di viaggio, travel, esperienze di viaggio">
+        <meta name="robots" content="index, follow">
+        <meta name="description" content="Scopri itinerari e consigli per viaggi economici e autentici in tutto il mondo. ViaggiaEconomico è il blog per chi vuole viaggiare spendendo poco">
+        <meta name="keywords" content="viaggi economici, itinerari, consigli viaggio, risparmiare viaggi, blog di viaggio, travel, esperienze di viaggio">
         <link rel="stylesheet" href="style-min.css">
 
         <meta property="og:title" content="ViaggiaEconomico: viaggi economici, itinerari e consigli low cost">
@@ -91,6 +90,32 @@
                         <h2 class="section-title">Destinazioni</h2>
                     </div>
 
+                    <!-- Destination filter -->
+                    <div class="filters">
+                        <div class="filter-item">
+                            <label for="searchName">Cerca destinazione:</label>
+                            <input type="text" id="searchName" placeholder="Es. Bulgaria, Malta...">
+                        </div>
+
+                        <div class="filter-item">
+                            <label for="priceRange">Prezzo massimo: <span id="priceValue">1000€</span></label>
+                            <input type="range" id="priceRange" min="100" max="1000" step="10" value="1000">
+                        </div>
+
+                        <div class="filter-item">
+                            <label for="sortOptions">Ordina per:</label>
+                            <select id="sortOptions">
+                                <option value="price-asc">Prezzo crescente</option>
+                                <option value="price-desc">Prezzo decrescente</option>
+                                <option value="name">Nome</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div id="noResults">
+                        Ops! Non c'è ancora una destinazione così tanto economica!
+                    </div>
+                    
                     <div class="destinations-grid">
 
                         <!-- Bulgaria -->
