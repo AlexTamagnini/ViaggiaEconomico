@@ -350,8 +350,7 @@ p {
    ==================================== */
 
 .destinations-section,
-.about-section,
-.newsletter-section {
+.info-section {
   background: var(--color-gray-100);
   padding: var(--spacing-2xl) var(--spacing-md);
 }
@@ -359,16 +358,6 @@ p {
 .section-header {
   text-align: center;
   margin-bottom: var(--spacing-lg);
-}
-
-.section-subtitle {
-  display: inline-block;
-  font-size: 0.85rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--color-accent);
-  margin-bottom: var(--spacing-xs);
 }
 
 .section-title {
@@ -384,6 +373,33 @@ p {
   color: #555;
   font-size: 1.2rem;
 }
+
+
+/* ====================================
+   INFO CARDS
+   ==================================== */
+
+.info-card {
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  cursor: default;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.30);
+}
+
+.info-card-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
 
 /* ====================================
    DESTINATION CARDS
@@ -864,6 +880,15 @@ input[type="range"] {
 
   .day-content {
     grid-template-columns: 1fr;
+  }
+
+  .info-card-row {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .info-card {
+    padding: 20px;
   }
 }
 
