@@ -472,6 +472,7 @@ p {
   align-items: center;
   overflow: hidden;
   border-radius: 8px;
+  margin-top: 24px;
 }
 
 .image-destination-day img {
