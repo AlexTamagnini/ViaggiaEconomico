@@ -422,7 +422,7 @@ p {
 }
 
 .destination-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-8px) !important;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.30);
 }
 
